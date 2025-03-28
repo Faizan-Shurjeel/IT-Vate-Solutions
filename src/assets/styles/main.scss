@@ -1,0 +1,76 @@
+@use './_variables' as vars;
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: vars.$background-color;
+  color: vars.$text-color;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  color: vars.$heading-color;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$primary-color;
+}
+
+.hero {
+  background: vars.$primary-color;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  
+  @media (max-width: vars.$breakpoint-md) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.service {
+  background: white;
+  border-radius: vars.$border-radius;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: vars.$box-shadow;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.testimonials {
+  background: vars.$background-color;
+  padding: 50px 20px;
+}
+
+.footer {
+  background: vars.$secondary-color;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+// Responsive utilities
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: vars.$breakpoint-md) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

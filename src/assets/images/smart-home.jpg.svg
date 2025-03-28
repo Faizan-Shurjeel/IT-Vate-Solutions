@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f0f7ee"/>
+  <text x="400" y="300" font-family="Arial" font-size="36" text-anchor="middle" fill="#2e7d32">Smart Home</text>
+  <path d="M300,400 L400,320 L500,400 Z" fill="#2e7d32" opacity="0.3"/>
+  <rect x="330" y="400" width="140" height="100" fill="#2e7d32" opacity="0.3"/>
+  <rect x="380" y="450" width="40" height="50" fill="#f0f7ee"/>
+</svg>
